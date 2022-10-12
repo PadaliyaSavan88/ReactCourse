@@ -36,9 +36,8 @@ const App = () => {
   // );
 
   const newExpenseAdd = (newExpense) => {
-    console.log(expenses)
     setExpenses(prevExpense => {
-      return [expenses, ...prevExpense]
+      return [newExpense, ...prevExpense]
     })
   }
 
